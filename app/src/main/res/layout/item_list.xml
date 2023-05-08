@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
     <RelativeLayout
+        android:id="@+id/item"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/_50sdp"
         android:layout_margin="@dimen/_5sdp"
         android:background="@drawable/bg_item">
         <TextView
+            android:id="@+id/titleItem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Title Notepad"
-            android:textSize="@dimen/_15ssp"
+            android:textSize="@dimen/_13ssp"
             android:textColor="@color/black"
             android:layout_marginStart="@dimen/_5sdp"
             android:layout_centerVertical="true"/>
         <TextView
+            android:id="@+id/date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Last edit: 08/05/2023, 8:48"

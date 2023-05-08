@@ -10,25 +10,27 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Notepad"
+        android:theme="@style/ThemeDefault"
         tools:targetApi="31">
         <activity
-            android:name=".feature.note.Note"
-            android:exported="false" />
+            android:name=".feature.note.NoteActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/ThemeDefault"/>
         <activity
             android:name=".feature.home.HomeActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.Notepad">
+            android:theme="@style/ThemeDefault">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"/>
     </application>
 
 </manifest>

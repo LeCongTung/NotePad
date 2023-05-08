@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".feature.note.Note">
+    tools:context=".feature.note.NoteActivity">
     <RelativeLayout
         android:id="@+id/main"
         android:layout_width="match_parent"
@@ -63,11 +63,13 @@
         android:layout_margin="@dimen/_2sdp"
         android:orientation="vertical">
         <EditText
+            android:id="@+id/titleEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter title"
             android:textSize="@dimen/_10ssp"/>
         <EditText
+            android:id="@+id/contentEditText"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="Enter text"

@@ -54,6 +54,7 @@
             android:textSize="@dimen/_15ssp" />
 
         <ImageView
+            android:id="@+id/buttonSetting"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
@@ -78,10 +79,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:listitem="@layout/item_list"
-            android:layout_below="@+id/main" />
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
         <ImageView
-
             android:id="@+id/btn_add"
             android:layout_width="wrap_content"
             android:padding="@dimen/_10sdp"
